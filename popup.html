@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+            font-family: Arial;
+            display: grid;
+            place-items: center;
+            gap: 10px;
+        }
+
+        input {
+            width: 150px;
+            margin-bottom: 10px;
+            border: 1px solid #8BC34A;
+            border-radius: 5px;
+            padding: 2px;
+            outline: none;
+            display: block;
+
+        }
+
+        button {
+            width: fit-content;
+            background-color: #8BC34A;
+            border: none;
+            padding: 3px 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #timer, #count_down{
+            min-width: 120px;
+            font-weight: bold;
+            color: #8BC34A;
+            display: none;
+        }
+
+        #timer_span, #count_down_span{
+            margin-left: 10px;
+            font-weight: 100;
+            color: #333333;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <img src="./icons/icon48.png" alt="icon">
+
+    <input type="number" id="seconds" min="1" placeholder="Seconds">
+    <div id="timer">Timer: <span id="timer_span">0</span></div>
+    <div id="count_down">Count down: <span id="count_down_span"></span></div>
+
+    <button id="start">Start Reload</button>
+
+    <script src="./popup.js"></script>
+
+</body>
+
+</html>
